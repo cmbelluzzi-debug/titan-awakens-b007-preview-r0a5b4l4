@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>TITAN Awakens (Build 007 preview)</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div id="app"></div>
+<div id="hud" class="hidden">
+  <div id="hearts"></div>
+  <div id="compass" class="hidden"><div id="cArrow">▲</div><div id="cLbl"></div></div>
+  <div id="quest"><div class="qt">Chapter 1 · The Shadow at the Gate</div><ul id="qlist"></ul></div>
+  <div id="prompt" class="hidden"></div>
+  <div id="toast" class="hidden"></div>
+  <div id="bossbar" class="hidden"><div class="bn"></div><div class="bb"><div class="bf"></div></div></div>
+  <div id="dialog" class="hidden"><div class="dn"></div><div class="dl"></div><div class="dt"></div><div class="dnext">Tap to continue ▸</div></div>
+  <div id="touch">
+    <div id="stickZone"></div>
+    <div id="stick"><div id="knob"></div></div>
+    <button id="bTalk" class="tb">Talk</button>
+    <button id="bJump" class="tb">Jump</button>
+    <button id="bAtk" class="tb small">✦</button>
+    <button id="bRun" class="tb small">Run</button>
+    <button id="bCam" class="tb small" title="Recenter camera">⟲</button>
+    <button id="bWolf" class="tb small hidden" title="Call Wolfie">🐺</button>
+    <button id="bLight" class="tb small hidden" title="Light (L)">✦</button>
+    <button id="bSpec" class="tb small hidden" title="Special (X)">🦵</button>
+    <button id="bDance" class="tb small hidden" title="Dance (B)">💃</button>
+  </div>
+  <button id="bMenu" class="mb">☰</button>
+  <button id="bHeroes" class="mb hb hidden" title="Heroes">👥</button>
+</div>
+<div id="select" class="hidden">
+  <h1>Torkvara</h1><h2>Chapter 1 · The Shadow at the Gate</h2>
+  <div class="cards">
+    <button class="card" data-hero="chrisler"><b>Chrisler</b><span>Brave leader · steady runner</span></button>
+    <button class="card" data-hero="beni_titan"><b>Beni in TITAN</b><span>Big bronze robot · strong star-burst</span></button>
+    <button class="card" data-hero="ezra"><b>Ezra</b><span>Quick young adventurer</span></button>
+  </div>
+  <button id="bStart" class="go">Start adventure</button>
+  <p class="hint">Move: WASD / arrows or the left thumb-stick · Run: Shift or the Run button · Talk: E · Jump: Space (or the Jump button) · Star-burst: Q</p>
+</div>
+<div id="title" class="hidden"><div class="tc"><h1>TITAN Awakens</h1><h2>A Torkvara adventure · Build 007 preview</h2>
+  <button id="bBegin" class="go">▶ Begin the story</button><div class="trow"><button id="bSkipIntro" class="ghost">Skip the opening</button><button id="bClassic" class="ghost">Classic chapter (choose hero)</button></div><button id="bCh2" class="go hidden">▶ Continue: Chapter 2 — Whisperwood</button><button id="bCh3" class="go hidden">▶ Continue: Chapter 3 — The Staff</button><button id="bFree" class="go hidden">▶ Continue: Free roam</button>
+  <p class="hint">Sound on! The opening story is narrated (about 2 minutes). Tap Skip any time.</p></div></div>
+<div id="cine" class="hidden"><div id="cBg"></div><div id="cImgs"></div><div id="cTitle"></div><div id="cFlash"></div>
+  <div id="cSub" class="hidden"><div id="cSpk"></div><div id="cTxt"></div></div><div id="cBar"><div id="cProg"></div></div><button id="cSkip">Skip ▸▸</button></div>
+<div id="fade"></div>
+<div id="loading"><div class="lt">TITAN Awakens</div><div class="lb"><div id="lbar"></div></div><div id="lmsg">Loading the village…</div></div>
+<div id="menu" class="hidden"><div class="mc"><h3>Paused</h3><button id="mResume">Resume</button><button id="mReplay">Replay opening story</button><button id="mVoice">Voices: on</button><button id="mAmb">Ambience: on</button><button id="mMusic">Music: off</button><button id="mFoot">Footsteps: on</button><button id="mQuality">Graphics: auto</button><button id="mCam">Camera follow: on</button><button id="mRestart">Restart chapter</button><div id="credits"></div></div></div>
+<div id="end" class="hidden"><div class="ec"><h1 id="eTitle">Chapter 1 complete!</h1><p id="eText">The castle gate is open and the shadow has lifted from Torkvara.</p><button id="eNext" class="hidden">▶ Continue: Chapter 2 — Into Whisperwood</button><button id="eAgain">Play again</button></div></div>
+<div id="heroes" class="hidden"><div class="hc"><h3>Heroes</h3><div id="heroCards"></div><button id="hClose">Close</button></div></div>
+<script type="module" src="app.js"></script>
+</body></html>
